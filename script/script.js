@@ -168,12 +168,16 @@ var block = 1
 window.addEventListener("scroll", () => {
     console.log( window.innerHeight)
     console.log( window.pageYOffset)
+       var header = document.getElementById("vamos")
        var divP = document.getElementById("apresentacao")
        var fundo = document.getElementsByClassName("particles-js-canvas-el")
        var fdiv = document.getElementById("particles-container")
        var nav = document.getElementById("vamos")
        if (window.pageYOffset > 5 && block == 1){
         console.log("img apareceu")
+        header.className = "aberto"
+        header.style.display = "grid"
+        // header.style.position = "absolute"
         divP.className = "aberto"
         nav.className = "aberto"
         fdiv.className = "dim"

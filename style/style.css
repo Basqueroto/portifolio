@@ -22,6 +22,7 @@
     --cor-blue-light: #6FFFE9;
     --cor-blue-dark: #151019;
     --cor-txt: #FFFFFF;
+    --cor-txt-light: rgb(193, 185, 255);
   }
 
   *{
@@ -30,12 +31,77 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    transition: 0.5s;
   }
 
 body{
   width: 100%;
 }
+/* -------------------------------header---------------------------- */
+#vamos {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  color: var(--cor-txt-light);
+   font-size: 20px;
+   margin-top: 5px;
+   display: none;
+   grid-template-rows: 1fr 1fr;
+   animation: surgir 1s ease-in-out;
+}
 
+#vamos a {
+  text-decoration: none;
+  color: var(--cor-txt-light);
+}
+
+#vamos a:hover {
+  font-size: 24px;
+}
+
+#vamos nav {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding-top: 30px;
+}
+
+#tell {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tell-tell{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 20px;
+}
+
+#tell-tell-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: fit-content;
+}
+
+#tell-tell-icon i {
+  font-size: 30px;
+}
+
+#tell-rede {
+  text-align: center;
+  padding-right: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+#tell-rede img:hover {
+  padding-top: 5px;
+  transition: 0.5s;
+}
+/* ---------------------------fundo animado ----------------------------- */
 #particles-container {
   width: 100%;
   background-color: var(--cor-blue-dark);
@@ -45,7 +111,7 @@ body{
 
 .container {
   position: absolute;
-  top: 300px;
+  top: 30vh;
   left: 40px;
   display: flex;
   justify-content: center;
@@ -96,6 +162,7 @@ body{
   position: absolute;
   top: 50vh;
   left: 37%;
+  animation: surgir-img 1s ease-in-out; 
 }
 
 #apresentacao-img h1 {
@@ -127,10 +194,9 @@ body{
   margin-bottom: 20px;
   font-size: 35px;
 }
-
+/* ------------------classes de operação----------------------------- */
 .fechado {
   display: none;
-  top: 110vh;
 }
 
 .aberto {
@@ -138,8 +204,39 @@ body{
 }
 
 .dim {
-  height: 60vh;
+  height: 70vh;
+  animation: subir-fundo 1s ease-in-out;
 }
 .aum {
   height: 100vh;
 }  
+
+/* -------------------------animations------------------- */
+ @keyframes surgir {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes surgir-img {
+  0% {
+    opacity: 0;
+    transform: translatey(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+} 
+
+@keyframes subir-fundo {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 70vh;
+  }
+}
