@@ -216,3 +216,14 @@ setInterval( function(){
         cont = 1;
     }
 }, 3000 );
+
+let cont_rob = 1;
+
+setInterval( function(){
+    document.getElementById('slideR' + cont).checked = true;
+    cont_rob++;
+
+    if(cont_rob > 3 ) {
+        cont_rob = 1;
+    }
+}, 3000 );

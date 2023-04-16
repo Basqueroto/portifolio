@@ -274,6 +274,12 @@ body{
   justify-content: space-around;
 }
 
+#experiencia-rob{
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
 .content {
   background-color: var(--cor-principal);
 }
@@ -288,8 +294,13 @@ body{
   margin-top: 50px;
 }
 
+.image-rob img{
+  width: 705px;
+  border-radius: 20px;
+}
+
 .slide-txt {
-  margin-top: 50px;
+  margin-top: 35px;
   margin-left: 10px;
   text-align: left;
 }
@@ -297,7 +308,25 @@ body{
 .slide-txt h4 {
   font-size: 20px;
   color: var(--cor-blue-light);
+  width: 300px;
 }
+.slide-cont p {
+  width: 315px;
+}
+
+.txt-rob h4 {
+  margin-top: 60px;
+  font-size: 30px;
+  color: var(--cor-blue-light);
+  width: 300px;
+}
+
+.txt-rob p {
+  margin-top: 25px;
+  font-size: 20px;
+  width: 300px;
+}
+
 
 /* -------------------------slider----------------------------- */
 .content {
@@ -308,11 +337,27 @@ body{
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
+#content-rob {
+  width: 1005px;
+  height: 470px;
+  background-color: var(--cor-principal);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
 .img {
   height: 100%;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+
+.img-rob {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
 }
 
 .navigation {
@@ -346,8 +391,19 @@ display: none;
   width: 500%;
   height: 100%;
 }
+.slides-rob {
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+
 
 .slide {
+  width: 20%;
+  transition: .6s;
+}
+
+.slide-rob {
   width: 20%;
   transition: .6s;
 }
@@ -376,6 +432,19 @@ display: none;
 #slide3:checked ~ .s1 {
   margin-left: -40%;
 } 
+/* --------------------------------------- */
+
+#slideR1:checked ~ .s1 {
+  margin-left: 0;
+} 
+
+#slideR2:checked ~ .s1 {
+  margin-left: -20%;
+} 
+
+#slideR3:checked ~ .s1 {
+  margin-left: -40%;
+} 
 
 /* -------------------------experiencias-------------------- */
 #experiencia {
@@ -390,7 +459,7 @@ display: none;
   padding-top: 30px;
 }
 
-#exp1 {
+/* #exp1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -405,12 +474,12 @@ display: none;
   display: grid;
   grid-template-columns: 1fr 3fr;
   border-radius: 40px;
-}
+} */
 
-#figure img {
+/* #figure img {
   width: 700px;
   border-radius: 40px;
-}
+} */
 
 #fig-hist h4{
   padding-top: 40px;
