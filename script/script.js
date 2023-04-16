@@ -168,17 +168,20 @@ window.addEventListener("scroll", () => {
        var first = document.getElementById("apresentacao-txt")
        var divP = document.getElementById("apresentacao")
        var fundo = document.getElementsByClassName("particles-js-canvas-el")
+       var fdiv = document.getElementById("particles-container")
        var nav = document.getElementById("vamos")
        if (window.pageYOffset > 5){
         console.log("img apareceu")
         divP.className = "aberto"
         nav.className = "aberto"
         fundo.className = "dim"
+        fdiv.className = "dim"
        }
-       else {
-        console.log("img voltou")
-        divP.className = "fechado"
-        nav.className = "fechado"
-        fundo.className = "aum"
-       }
+    //    else {
+    //     console.log("img voltou")
+    //     divP.className = "fechado"
+    //     nav.className = "fechado"
+    //     fundo.className = "aum"
+    //     fdiv.className = "aum"
+    //    }
 })
