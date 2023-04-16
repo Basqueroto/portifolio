@@ -14,3 +14,132 @@
     background-size: cover; 
     background-position: 100% 100%; 
   } */
+
+  :root {
+    --cor-principal:#0B132B;
+    --cor-divs: #3A506B;
+    --cor-blue: #5BC0BE;
+    --cor-blue-light: #6FFFE9;
+    --cor-blue-dark: #151019;
+    --cor-txt: #FFFFFF;
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+body{
+  width: 100%;
+}
+
+#particles-container {
+  width: 100%;
+  background-color: var(--cor-blue-dark);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.container {
+  position: absolute;
+  top: 300px;
+  left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-family: 'Chivo Mono', monospace;
+  font-size: 5rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  color: rgb(193, 185, 255);
+}
+.container p span.typed-text {
+  font-family: 'Chivo Mono', monospace;
+  font-weight: normal;
+  color: var(--cor-blue-light);
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+#apresentacao {
+  width: 100%;
+  background-color: var(--cor-principal);
+}
+
+#apresentacao-img {
+  text-align: center;
+  background: transparent;
+  border-radius: 100%;
+  position: absolute;
+  top: 90vh;
+  left: 37%;
+}
+
+#apresentacao-img h1 {
+   color: var(--cor-txt);
+   font-size: 35px;
+   margin-top: 20px;
+}
+
+#apresentacao-img img {
+  width: 250px;
+}
+
+#apresentacao-txt {
+  padding-top: 110px;
+  color: var(--cor-txt);
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#apresentacao-txt p{
+  width: 750px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#hi h2 {
+  color: var(--cor-blue-light);
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.fechado {
+  display: none;
+  top: 110vh;
+}
+
+.aberto {
+  display: block;
+}
+
+.dim {
+  height: 50vh;
+}
+.aum {
+  height: 100vh;
+}  

@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/07031450bd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css">
     <title>Basqueroto</title>
@@ -11,7 +17,7 @@
 <body>
     <main>
         <section id = "presents">
-            <div id="vamos">
+            <div id="vamos" class="fechado">
                 <nav>
                     <a href="">Quem seu sou</a>
                     <a href="">Habilidades</a>
@@ -26,27 +32,35 @@
                     <p>18 99665-6010</p>
                 </div>
             </div>
-            <div id="particles-container"></div>
             
-            <div id="apresentacao">
+            <div id="particles-container">
+                <div class="container">
+                    <p>Coding is <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                </div>
+            </div>
+            <div id="apresentacao"class = "fechado">
                 <div id="apresentacao-img">
                     <figure>
-                        <img src="img/baziz big 1.png" alt="Felipe Basqueroto">
+                        <img src="img/baziz big 1.png" alt="Felipe Basqueroto" id="perfil">
                     </figure>
                     <h1>Felipe Basqueroto</h1>
                 </div>
                 <div id="apresentacao-txt">
                     <div id="txt">
-                        <h2>Olá</h2>
-                        <p>Muito prazer,meu nome é felipe Basqueroto, tenho 16 anos e atualme moro na cidade de birigui, sou um entusiasta da programção e da robótica.
-                            Atualmente aprimoro minhas habilidades no curso de Desenvolvimento de sistemas no Senai, nesse curso somos desafiados, por meio de projetos em equipes, a aprender sobre as linguagens frontend e Backend
-                            nesse momento estou aprimorando minhas habilidades em HTML, CSS, Javascript, PHP, Python e metodologias ágeis como a scrum.
-                        </p>
-                        <p>
-                            Como experiencias já participei de torneios de robótica pelo país, estimulando o pensamento crítico, ágil e inovador na solução de problemas
-                            de forma autônoma, experiencias essas muito valiosas para meu desenvolvimento intelectual e pessoal. Agora estou em busca de mais experiências marcantes,
-                            em que eu possa ajudar, mas também aprender.
-                        </p>
+                        <div id="hi">
+                            <h2>Olá</h2>
+                            <p>Muito prazer,meu nome é felipe Basqueroto, tenho 16 anos e atualme moro na cidade de birigui, sou um entusiasta da programção e da robótica.
+                                Atualmente aprimoro minhas habilidades no curso de Desenvolvimento de sistemas no Senai, nesse curso somos desafiados, por meio de projetos em equipes, a aprender sobre as linguagens frontend e Backend
+                                nesse momento estou aprimorando minhas habilidades em HTML, CSS, Javascript, PHP, Python e metodologias ágeis como a scrum.
+                            </p>
+                        </div>
+                        <div id="exp">
+                            <p>
+                                Como experiencias já participei de torneios de robótica pelo país, estimulando o pensamento crítico, ágil e inovador na solução de problemas
+                                de forma autônoma, experiencias essas muito valiosas para meu desenvolvimento intelectual e pessoal. Agora estou em busca de mais experiências marcantes,
+                                em que eu possa ajudar, mas também aprender.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,7 +80,7 @@
                     <p>CSS</p>
                 </div>
                 <div class="icon">
-                    <img src="/img/php.png" alt="php">
+                    <img src="" alt="php">
                     <p>PHP</p>
                 </div>
                 <div class="icon">
