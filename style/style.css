@@ -189,6 +189,10 @@ body{
   margin-bottom: 20px;
 }
 
+#exp p {
+  padding-bottom: 40px;
+}
+
 #hi h2 {
   color: var(--cor-blue-light);
   margin-bottom: 20px;
@@ -210,6 +214,60 @@ body{
 .aum {
   height: 100vh;
 }  
+
+/* --------------------------habilidades--------------------------- */
+
+#habilidades {
+  background-color: var(--cor-divs);
+  width: 100%;
+  color: var(--cor-txt);
+  text-align: center;
+}
+
+#habilidades-txt{
+  padding: 30px;
+  font-size: 30px;
+}
+
+#habilidades-icons{
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+} 
+
+#habilidades-icons img{
+  width: 100px;
+}
+
+#habilidades-icons img:hover{
+  width: 120px;
+}
+
+#habilidades-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+#html:hover #habilidades-icons {
+  background: rgb(255,255,255);
+  background: linear-gradient(288deg, rgba(255,255,255,1) 0%, rgba(255,109,0,1) 51%, rgba(230,81,0,1) 96%);
+} 
+
+.box {
+  border-radius: 40px;
+  margin: 50px 20px;
+  background-color: var(--cor-principal);
+  width: 500px;
+  height: 300px;
+  -webkit-box-shadow: 0px 1px 16px 3px rgba(0,0,0,0.56);
+  -moz-box-shadow: 0px 1px 16px 3px rgba(0,0,0,0.56);
+  box-shadow: 0px 1px 16px 3px rgba(0,0,0,0.56);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.box img {
+  width: 200px;
+}
 
 /* -------------------------animations------------------- */
  @keyframes surgir {
