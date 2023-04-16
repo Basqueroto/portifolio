@@ -361,6 +361,127 @@ body{
 }
 
 /* -------------------------portifólio------------------------------------- */
+#portifolio {
+  padding-top: 20px;
+  color: var(--cor-txt);
+  background-color: var(--cor-principal);
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  width: 100%;
+  height: 500px;
+}
+
+#works-line1 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#port-txt {
+  text-align: center;
+  color: var(--cor-txt);
+  background-color: var(--cor-divs);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 20px;
+}
+
+#por-title {
+  display: flex;
+  align-items: flex-end;
+  font-size: 30px;
+}
+
+#por-sub {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  text-align: left;
+}
+
+#por-p {
+  display: flex;
+  align-items: start;
+}
+
+#por-btn button {
+  margin-top: 15px;
+  background-color: var(--cor-divs);
+  border: none;
+}
+
+#por-btn i{
+  color: var(--cor-txt);
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+/* -----------------------------------contato--------------------------- */
+
+#contato {
+  background-color: var(--cor-blue-dark);
+  color: var(--cor-txt);
+}
+
+#try-fim {
+  width: 150%;
+  color: var(--cor-principal);
+}
+
+#cont img {
+  width: 150px;
+}
+
+#cont img:hover {
+  cursor: pointer;
+  width: 170px;
+}
+
+#contato-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+#contato-txt h4 {
+  margin-bottom: 20px;
+}
+
+#cont-rest {
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+#cont-form {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+#cont-form h4 {
+  font-size: 20px;
+}
+
+.forma {
+  text-align: center;
+  margin: 20px;
+}
+
+#email, #telefone  {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.sub-title {
+  font-size: 20px;
+}
 
 
 /* -------------------------animations------------------- */
