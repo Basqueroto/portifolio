@@ -184,7 +184,7 @@ body{
 }
 
 #apresentacao-txt p{
-  width: 750px;
+  width: 650px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -249,12 +249,12 @@ body{
 }
 
 
-.box {
+/* .box {
   border-radius: 40px;
   margin: 50px 20px;
   background-color: var(--cor-principal);
   width: 500px;
-  height: 300px;
+  height: 220px;
   -webkit-box-shadow: 0px 1px 16px 3px rgba(0,0,0,0.56);
   -moz-box-shadow: 0px 1px 16px 3px rgba(0,0,0,0.56);
   box-shadow: 0px 1px 16px 3px rgba(0,0,0,0.56);
@@ -263,8 +263,119 @@ body{
 }
 
 .box img {
-  width: 200px;
+  margin-top: 30px;
+  width: 150px;
+} */
+
+#habilidades-box {
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
+
+.content {
+  background-color: var(--cor-principal);
+}
+
+.slide-img img {
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 128px;
+}
+
+#ma img{
+  margin-top: 50px;
+}
+
+.slide-txt {
+  margin-top: 50px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.slide-txt h4 {
+  font-size: 20px;
+  color: var(--cor-blue-light);
+}
+
+/* -------------------------slider----------------------------- */
+.content {
+  height: 220px;
+  width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.navigation {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.bar {
+
+  width: 15px;
+  height: 15px;
+  border: 2px solid white;
+  margin: 6px;
+  border-radius: 15px;
+  cursor: pointer;
+  transform: .5s ease;
+
+}
+
+.bar:hover {
+  background-color: white;
+}
+
+input {
+display: none;
+}
+
+.slides {
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+
+.slide {
+  width: 20%;
+  transition: .6s;
+}
+
+#slide21:checked ~ .s1 {
+  margin-left: 0;
+} 
+
+#slide22:checked ~ .s1 {
+  margin-left: -20%;
+} 
+
+#slide23:checked ~ .s1 {
+  margin-left: -40%;
+} 
+/* -------------------------------------------------- */
+
+#slide1:checked ~ .s1 {
+  margin-left: 0;
+} 
+
+#slide2:checked ~ .s1 {
+  margin-left: -20%;
+} 
+
+#slide3:checked ~ .s1 {
+  margin-left: -40%;
+} 
 
 /* -------------------------experiencias-------------------- */
 #experiencia {

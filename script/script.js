@@ -193,3 +193,26 @@ window.addEventListener("scroll", () => {
     //     fdiv.className = "aum"
     //    }
 })
+
+// ---------------------------rodar automático--------------------------------
+let contador = 1;
+
+setInterval( function(){
+    document.getElementById('slide' + contador).checked = true;
+    contador++;
+
+    if(contador > 3 ) {
+        contador = 1;
+    }
+}, 3000 );
+
+let cont = 1;
+
+setInterval( function(){
+    document.getElementById('slide2' + cont).checked = true;
+    cont++;
+
+    if(cont > 3 ) {
+        cont = 1;
+    }
+}, 3000 );
