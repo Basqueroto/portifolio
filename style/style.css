@@ -25,6 +25,9 @@
     --cor-txt-light: rgb(193, 185, 255);
     --cor-pokedex: #EF233C;
     --cor-marketing: #003566;
+    --cor-senai-livre:#FFC300;
+    --cor-dashboard:#1E1E2D;
+    --cor-sandalia: #FF8A00;
   }
 
   *{
@@ -549,17 +552,20 @@ display: none;
   background-color: var(--cor-principal);
   display: grid;
   grid-template-columns: 1fr 5fr;
+  gap: 4px;
   width: 100%;
-  height: 500px;
+  height: 550px;
 }
 
 #works-line1 {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  gap: 4px;
 }
 
 #port-txt {
+  height: 480px;
   text-align: center;
   color: var(--cor-txt);
   background-color: var(--cor-divs);
@@ -606,6 +612,8 @@ display: none;
 
 .work-img img {
   width: 200px;
+  display: flex;
+  align-items: center;
 }
 
 .work-img {
@@ -619,13 +627,24 @@ display: none;
 }
 
 .work-txt p {
-  width: 170px;
+  width: 180px;
 }
 
 .work-txt-p {
   display: flex;
   justify-content: center;
+  align-items: start;
 }
+
+.work:hover {
+  border: none;
+  box-shadow: 0px -1px 19px -3px rgba(111, 255, 233, 1);
+  -webkit-box-shadow: 0px -1px 19px -3px rgba(111, 255, 233, 1);
+  -moz-box-shadow: 0px -1px 19px -3px rgba(111, 255, 233, 1);
+  margin-top: 30px;
+}
+
+/* ----------------------------------projects-------------------------------------------------- */
 
 #pokedex {
   background-color: var(--cor-pokedex);
@@ -642,11 +661,49 @@ display: none;
   padding: 68px 0px;
   margin: 0;
 }
+
+#senaiL {
+  background-color: var(--cor-senai-livre);
+}
+
+#senaiL .work-txt-p {
+  height:100px ;
+}
+
+#dashboard {
+  background-color: var(--cor-dashboard);
+}
+
+#dashboard img {
+  width: 180px;
+}
+
+#dashboard p {
+  height: 80px;
+}
+
+#sandalia {
+  background-color: var(--cor-sandalia);
+}
+
+#sandalia .work-img figure {
+  display: flex;
+  align-items: center;
+  
+}
+
+#sandalia p {
+  height: 70px ;
+}
 /* -----------------------------------contato--------------------------- */
 
 #contato {
   background-color: var(--cor-blue-dark);
   color: var(--cor-txt);
+}
+
+#try-fim-fim{
+  overflow: hidden;
 }
 
 #try-fim {
@@ -655,7 +712,7 @@ display: none;
 }
 
 #cont img {
-  width: 150px;
+  width: 130px;
 }
 
 #cont img:hover {
