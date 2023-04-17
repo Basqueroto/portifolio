@@ -193,6 +193,8 @@ window.addEventListener("scroll", () => {
     //     fdiv.className = "aum"
     //    }
 })
+  
+
 
 // ---------------------------rodar automático--------------------------------
 let contador = 1;

@@ -23,6 +23,8 @@
     --cor-blue-dark: #151019;
     --cor-txt: #FFFFFF;
     --cor-txt-light: rgb(193, 185, 255);
+    --cor-pokedex: #EF233C;
+    --cor-marketing: #003566;
   }
 
   *{
@@ -595,6 +597,51 @@ display: none;
   margin-right: 5px;
 }
 
+.work {
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-img img {
+  width: 200px;
+}
+
+.work-img {
+  display: flex;
+  justify-content: center;
+}
+
+.work-txt p, .work-txt h4 {
+  color: var(--cor-txt);
+  margin-bottom: 10px;
+}
+
+.work-txt p {
+  width: 170px;
+}
+
+.work-txt-p {
+  display: flex;
+  justify-content: center;
+}
+
+#pokedex {
+  background-color: var(--cor-pokedex);
+}
+#mark {
+  background-color: var(--cor-marketing);
+  text-align: center;;
+}
+
+#mark h1 {
+  color: var(--cor-txt);
+  text-decoration: none;
+  font-size: 30px;
+  padding: 68px 0px;
+  margin: 0;
+}
 /* -----------------------------------contato--------------------------- */
 
 #contato {
