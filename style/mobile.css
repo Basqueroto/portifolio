@@ -217,6 +217,11 @@
         grid-template-columns: 1fr;
     }
 
+    #tell {
+        display: flex;
+        justify-content: right;
+    }
+
     .img-rob {
         height: 100%;
         min-width: 100%;
