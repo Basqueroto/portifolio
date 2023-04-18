@@ -222,10 +222,9 @@ setInterval( function(){
 let cont_rob = 1;
 
 setInterval( function(){
-    document.getElementById('slideR' + cont).checked = true;
+    document.getElementById('slideR' + cont_rob).checked = true;
     cont_rob++;
-
-    if(cont_rob > 3 ) {
+    if(cont_rob > 5 ) {
         cont_rob = 1;
     }
-}, 3000 );
+}, 5000 );

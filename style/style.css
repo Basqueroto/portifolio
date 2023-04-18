@@ -321,8 +321,19 @@ body::-webkit-scrollbar-thumb {
 
 .image-rob img{
   width: 705px;
-  border-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
+
+#alianca .image-rob {
+  display: flex;
+  align-items: center;
+}
+
+#alianca .image-rob img{
+  border-radius: 10px;
+}
+
 
 .slide-txt {
   margin-top: 35px;
@@ -348,10 +359,14 @@ body::-webkit-scrollbar-thumb {
 
 .txt-rob p {
   margin-top: 25px;
-  font-size: 20px;
-  width: 300px;
+  font-size: 15px;
+  width: 270px;
 }
 
+.txt-rob-sub {
+  margin-left: 20px;
+  text-align: left;
+}
 
 /* -------------------------slider----------------------------- */
 .content {
@@ -422,7 +437,6 @@ display: none;
   height: 100%;
 }
 
-
 .slide {
   width: 20%;
   transition: .6s;
@@ -469,6 +483,14 @@ display: none;
 
 #slideR3:checked ~ .s1 {
   margin-left: -40%;
+} 
+
+#slideR4:checked ~ .s1 {
+  margin-left: -60%;
+} 
+
+#slideR5:checked ~ .s1 {
+  margin-left: -80%;
 } 
 
 /* -------------------------experiencias-------------------- */
