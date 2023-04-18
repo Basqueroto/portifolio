@@ -11,7 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/07031450bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mobile.css">
     <title>Basqueroto</title>
 </head>
 <body>
@@ -19,14 +21,23 @@
         <a name="ancora1" id="ancora1"></a>
         <section id = "presents">
             <div id="vamos">
-                <nav>
-                    <a href="#apresentacao">Quem seu sou</a>
-                    <a href="#habilidades">Habilidades</a>
-                    <a href="#experiencia">Experiências</a>
-                    <a href="#oquefaco">Oque faço</a>
-                    <a href="#portifolio">Portifólio</a>
-                    <a href="#contato">contato</a>
-                </nav>
+                <div>
+                    <div id="burguer">
+                        <span id="menu" class="material-symbols-outlined" onclick="clickmenu()">
+                            menu
+                        </span>
+                    </div>
+                    <div id="itens">
+                        <nav>
+                            <a href="#apresentacao">Quem sou eu</a>
+                            <a href="#habilidades">Habilidades</a>
+                            <a href="#experiencia">Experiências</a>
+                            <a href="#oquefaco">Oque faço</a>
+                            <a href="#portifolio">Portifólio</a>
+                            <a href="#contato">contato</a>
+                        </nav>
+                    </div>
+                </div>
                 <div id="tell">
                     <div id="tell-tell">
                         <div id="tell-tell-icon">
@@ -50,10 +61,12 @@
             </div>
             <div id="apresentacao"class = "fechado">
                 <div id="apresentacao-img">
-                    <figure>
-                        <img src="img/baziz big 1.png" alt="Felipe Basqueroto" id="perfil">
-                    </figure>
-                    <h1>Felipe Basqueroto</h1>
+                    <div id="fot-ma">
+                        <figure>
+                            <img src="img/baziz big 1.png" alt="Felipe Basqueroto" id="perfil">
+                        </figure>
+                        <h1>Felipe Basqueroto</h1>
+                    </div>
                 </div>
                 <div id="apresentacao-txt">
                     <div id="txt">
@@ -107,140 +120,144 @@
                 </div>
             </div>
             <div id="habilidades-box">
-                <div class="box1">
-                    <h4 class="hab-title">Diferenciais</h4>
-                    <div class="content">
-                        <div class="slides">
+                <div class="boxer">
+                    <div class="box1">
+                        <h4 class="hab-title">Diferenciais</h4>
+                        <div class="content">
+                            <div class="slides">
 
-                            <input class="input" type="radio" name="slide" id="slide1" checked>
-                            <input class="input" type="radio" name="slide" id="slide2">
-                            <input class="input" type="radio" name="slide" id="slide3">
-                
-                
-                            <div class="slide s1">
-                                <div class="img">
-                                    <div class="slide-img">
-                                        <img src="img/agil.png" alt="metodologias ágeis">
-                                    </div>
-                                    <div class="slide-txt">
-                                        <div class="slide-title">
-                                            <h4>Metodologias ágeis</h4>
+                                <input class="input" type="radio" name="slide" id="slide1" checked>
+                                <input class="input" type="radio" name="slide" id="slide2">
+                                <input class="input" type="radio" name="slide" id="slide3">
+                    
+                    
+                                <div class="slide s1">
+                                    <div class="img">
+                                        <div class="slide-img">
+                                            <img src="img/agil.png" alt="metodologias ágeis">
                                         </div>
-                                        <div class="slide-cont">
-                                            <p>Como forma de organização utilizo metodologias ágeis, em especial o Scrum. Dessa maneira é possível dinamizar o fluxo do produto por meio de feedbacks constantes</p>
+                                        <div class="slide-txt">
+                                            <div class="slide-title">
+                                                <h4>Metodologias ágeis</h4>
+                                            </div>
+                                            <div class="slide-cont">
+                                                <p>Como forma de organização utilizo metodologias ágeis, em especial o Scrum. Dessa maneira é possível dinamizar o fluxo do produto por meio de feedbacks constantes</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="slide">
+                                    <div class="img">
+                                        <div class="slide-img" id="ma">
+                                            <img src="img/programacao-da-web.png" alt="Programação orientada a objetos">
+                                        </div>
+                                        <div class="slide-txt">
+                                            <div class="slide-title">
+                                                <h4>Programação Orientada a Objetos</h4>
+                                            </div>
+                                            <div class="slide-cont">
+                                                <p>Durante o desenvolvimento de aplicações utilizo a técnica da programação orientada a objetos, uma prática valorizada no mercado que garante eficiência e organização do código.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="slide">
+                                    <div class="img">
+                                        <div class="slide-img">
+                                            <img src="img/clean.svg" alt="clean code">
+                                        </div>
+                                        <div class="slide-txt">
+                                            <div class="slide-title">
+                                                <h4>Clean code</h4>
+                                            </div>
+                                            <div class="slide-cont">
+                                                <p>Durante o desenvolvimento busco utilizar as melhores práticas do mercado para garantir qualidade ao código.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                
-                            <div class="slide">
-                                <div class="img">
-                                    <div class="slide-img" id="ma">
-                                        <img src="img/programacao-da-web.png" alt="Programação orientada a objetos">
-                                    </div>
-                                    <div class="slide-txt">
-                                        <div class="slide-title">
-                                            <h4>Programação Orientada a Objetos</h4>
-                                        </div>
-                                        <div class="slide-cont">
-                                            <p>Durante o desenvolvimento de aplicações utilizo a técnica da programação orientada a objetos, uma prática valorizada no mercado que garante eficiência e organização do código.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="slide">
-                                <div class="img">
-                                    <div class="slide-img">
-                                        <img src="img/clean.svg" alt="clean code">
-                                    </div>
-                                    <div class="slide-txt">
-                                        <div class="slide-title">
-                                            <h4>Clean code</h4>
-                                        </div>
-                                        <div class="slide-cont">
-                                            <p>Durante o desenvolvimento busco utilizar as melhores práticas do mercado para garantir qualidade ao código.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        </div> 
+                        <div class="navigation">
+                    
+                            <label class="bar" for="slide1"></label>
+                            <label class="bar" for="slide2"></label>
+                            <label class="bar" for="slide3"></label>
                         </div>
-                    </div> 
-                    <div class="navigation">
-                
-                        <label class="bar" for="slide1"></label>
-                        <label class="bar" for="slide2"></label>
-                        <label class="bar" for="slide3"></label>
                     </div>
                 </div>
-                <div class="box1">
-                    <h4 class="hab-title">Power ups</h4>
-                    <div class="content">
-                        <div class="slides">
+                <div class="boxer">
+                    <div class="box1">
+                        <h4 class="hab-title">Power ups</h4>
+                        <div class="content">
+                            <div class="slides">
 
-                            <input class="input" type="radio" name="slide2" id="slide21" checked>
-                            <input class="input" type="radio" name="slide2" id="slide22">
-                            <input class="input" type="radio" name="slide2" id="slide23">
-                
-                
-                            <div class="slide s1">
-                                <div class="img">
-                                    <div class="slide-img">
-                                        <img src="img/team.png" alt="">
-                                    </div>
-                                    <div class="slide-txt">
-                                        <div class="slide-title">
-                                            <h4>Experiência com desenvolvimento em equipe</h4>
+                                <input class="input" type="radio" name="slide2" id="slide21" checked>
+                                <input class="input" type="radio" name="slide2" id="slide22">
+                                <input class="input" type="radio" name="slide2" id="slide23">
+                    
+                    
+                                <div class="slide s1">
+                                    <div class="img">
+                                        <div class="slide-img">
+                                            <img src="img/team.png" alt="">
                                         </div>
-                                        <div class="slide-cont">
-                                            <p>Durante os torneios de robótica tive a oportunidade colaborar com uma equipe para o desenvolvimento do projeto, esse fato me possibilitou desenvolver minhas habilidades em comunicação e gestão bem como a troca de conhecimentos.</p>
+                                        <div class="slide-txt">
+                                            <div class="slide-title">
+                                                <h4>Experiência com desenvolvimento em equipe</h4>
+                                            </div>
+                                            <div class="slide-cont">
+                                                <p>Durante os torneios de robótica tive a oportunidade colaborar com uma equipe para o desenvolvimento do projeto, esse fato me possibilitou desenvolver minhas habilidades em comunicação e gestão bem como a troca de conhecimentos.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="slide">
+                                    <div class="img">
+                                        <div class="slide-img">
+                                            <img src="img/arduino.svg" alt="">
+                                        </div>
+                                        <div class="slide-txt">
+                                            <div class="slide-title">
+                                                <!-- exp dev de projetos em rob e auto -->
+                                                <h4>Experiencia no desenvolvimento de projetos autônomos</h4>
+                                            </div>
+                                            <div class="slide-cont">
+                                                <p>Possuo habilidades em automação de tarefas usando plataformas de prototipágem como o Arduino, atualmente estou estudando machine learn e otimização de tarefas usando python.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="slide">
+                                    <div class="img">
+                                        <div class="slide-img">
+                                            <img src="img/agil.png" alt="">
+                                        </div>
+                                        <div class="slide-txt">
+                                            <div class="slide-title">
+                                                <!-- aprimoramento de hab em lógica de prog -->
+                                                <h4>Aprimoramento da habilidade em lógica de programação</h4>
+                                            </div>
+                                            <div class="slide-cont">
+                                                <p>As complexas lógicas de programação desenvolvidas no robô durante os torneios de robótica, estimularam muito minhas aptidões em lógica de programação.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                
-                            <div class="slide">
-                                <div class="img">
-                                    <div class="slide-img">
-                                        <img src="img/arduino.svg" alt="">
-                                    </div>
-                                    <div class="slide-txt">
-                                        <div class="slide-title">
-                                            <!-- exp dev de projetos em rob e auto -->
-                                            <h4>Experiencia no desenvolvimento de projetos autônomos</h4>
-                                        </div>
-                                        <div class="slide-cont">
-                                            <p>Possuo habilidades em automação de tarefas usando plataformas de prototipágem como o Arduino, atualmente estou estudando machine learn e otimização de tarefas usando python.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="slide">
-                                <div class="img">
-                                    <div class="slide-img">
-                                        <img src="img/agil.png" alt="">
-                                    </div>
-                                    <div class="slide-txt">
-                                        <div class="slide-title">
-                                            <!-- aprimoramento de hab em lógica de prog -->
-                                            <h4>Aprimoramento da habilidade em lógica de programação</h4>
-                                        </div>
-                                        <div class="slide-cont">
-                                            <p>As complexas lógicas de programação desenvolvidas no robô durante os torneios de robótica, estimularam muito minhas aptidões em lógica de programação.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        </div> 
+                        <div class="navigation">
+                    
+                            <label class="bar" for="slide21"></label>
+                            <label class="bar" for="slide22"></label>
+                            <label class="bar" for="slide23"></label>
                         </div>
-                    </div> 
-                    <div class="navigation">
-                
-                        <label class="bar" for="slide21"></label>
-                        <label class="bar" for="slide22"></label>
-                        <label class="bar" for="slide23"></label>
-                    </div>
-                </div>   
+                    </div>  
+                </div> 
             </div>  
         </section>
         <section id="experiencia">
@@ -379,7 +396,7 @@
                         <img src="img/ferramentas-de-design.png" alt="">
                         <h4>Frontend</h4>
                         <div class="fac">
-                            <p>Desenvolvimento de sites abordordando técnicas em Html, Css e Javascript, com foco na alti fidelidade.</p>
+                            <p>Desenvolvimento de sites abordordando técnicas em Html, Css e Javascript, com foco na alta fidelidade.</p>
                         </div>
                     </div>
                     <div id="prototipagem" >

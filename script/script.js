@@ -228,3 +228,12 @@ setInterval( function(){
         cont_rob = 1;
     }
 }, 5000 );
+
+function clickmenu() {
+    if(itens.style.display == "grid"){
+        itens.style.display = "none";
+    }
+    else {
+        itens.style.display = "grid";
+    }
+}

@@ -1,0 +1,374 @@
+@media (max-width:1441px) {
+    .container p{
+        font-size: 4rem;
+    }
+   
+    #particles-container {
+        min-width: 100%;
+        background-color: var(--cor-blue-dark);
+    }
+}
+
+@media (max-width:1025px) {
+    #habilidades-box{
+        display: block;
+    }
+
+    .boxer {
+        display: flex;
+        justify-content: center;
+    }
+
+    #content-rob {
+        width:804px;
+        height: 376px;
+    }
+
+    .image-rob img{
+        width: 504px;
+      }
+
+    .txt-rob h4 {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .txt-rob p {
+        margin-top: 15px;
+        font-size: 14px;
+      }
+
+      #thisfaco p {
+        width: 250px;
+      }
+
+    #portifolio{
+        width: 100%;
+        overflow: auto;
+    }  
+
+    .work {
+        width: 215px;
+    }
+
+    #por-title {
+        font-size: 25px;
+        padding-right: 10px;
+    }
+
+    #por-p {
+        font-size: 15px;
+    }
+
+    #port-txt {
+        padding-left: 10px;
+        text-align: left;
+      }
+}
+
+@media (max-width:769px) {
+    .container p{
+        font-size: 3rem;
+    }
+
+    #vamos {
+        font-size: 17px;
+        grid-template-rows: 1fr 3fr;
+    }
+
+    #tell-rede {
+        padding-right: 30px;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #vamos a {
+        height: 10px;    
+    }
+
+    #tell-rede a {
+        height: 40px;
+    }
+
+    #tell-rede {
+        margin-top: 10px;
+    }
+
+    #tell-tell {
+        grid-template-rows: 1fr 3fr;
+    }
+    /* ------------------------------experiencias------------------------------- */
+    #content-rob {
+        width:643px;
+        height: 300px;
+    }
+
+    .image-rob img{
+        width: 340px;
+        border-radius: 20px;
+    }
+    
+    .image-rob {
+        display: flex;
+        align-items: center;
+    }
+
+    .txt-rob h4 {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .txt-rob p {
+        margin-top: 13px;
+        font-size: 13px;  
+    }
+
+    /* o que faço */
+
+    #thisfaco p {
+        width: 200px;
+      }
+}
+
+@media (max-width:476px) {
+    body {
+        width: 100%;
+    }
+
+    #burguer {
+        display: inline-block;
+    }
+
+    #itens {
+        display: none;
+    }
+    
+    .container p{
+        font-size: 2rem;
+    }
+
+
+    #vamos, #apresentacao {
+        display: block;
+    }
+
+    #vamos {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #particles-container, particles-js-canvas-el {
+        height: 70vh;
+        animation: subir-fundo 1s ease-in-out;
+    }
+
+    #vamos nav {
+        text-align: left;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, 1fr);
+        padding-top: 5px;
+        padding-left: 10px;
+        width: 120px;
+    }
+
+    #vamos nav a {
+        margin-bottom: 15px;
+    }
+    
+    #burguer span {
+        margin-left: 10px;
+        font-size: 40px;
+    }
+
+    #tell-tell-icon i {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    #tell-tell-icon h3 {
+        font-size: 15px;
+        width: 100px;
+        align-items: right;
+    }
+
+    #tell-tell {
+        display: none;
+    }
+
+    #tell-rede a {
+        height: 20px;
+    } 
+
+    #tell-rede {
+        height: 150px;
+        padding-right: 10px;
+    } 
+
+    #habilidades-icons{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 300px;
+    } 
+
+    #thisfaco {
+        min-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .img-rob {
+        height: 100%;
+        min-width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 2fr;
+    }
+
+    #content-rob {
+        width:340px ;
+        height: 580px;
+        background-color: var(--cor-principal);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+    #txt-rob-title {
+        text-align: center;
+    }
+
+    .txt-rob-sub p{
+        padding-left: 50px;
+        margin-bottom: 20px;
+    }
+
+    #contato {
+        width: 100%;
+    }
+
+    #apresentacao-txt {
+        padding-top: 180px;
+        color: var(--cor-txt);
+        font-size: 15px;
+    }
+
+    #txt {
+        width: 400px;
+    }
+
+    #txt p{
+        width: 400px;
+    }
+
+    #cont img {
+        width: 90px;
+      }
+
+    .content {
+        height: 280px;
+        width: 400px;
+    } 
+    
+    .slide-cont p {
+        width: 240px;
+    }
+
+    .slide-txt h4 {
+        font-size: 17px;
+        color: var(--cor-blue-light);
+        width: 240px;
+      }
+
+      .hab-title {
+        margin-top: 20px;
+      }
+}
+
+@media (max-width:376px) {
+    .content {
+        height: 340px;
+        width: 340px;
+    } 
+    
+    .slide-cont p {
+        width: 180px;
+    }
+
+    .slide-txt h4 {
+        font-size: 17px;
+        color: var(--cor-blue-light);
+        width: 180px;
+      }
+
+      #cont-form {
+        text-align: center;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        height: fit-content;
+        margin-bottom: 40px;
+    }
+    
+    #cont img {
+        width: 90px;
+    }
+
+    #apresentacao-txt {
+        padding-top: 180px;
+        color: var(--cor-txt);
+        font-size: 15px;
+    }
+
+    #txt {
+        width: 350px;
+    }
+
+    #txt p{
+        width: 350px;
+    }
+}
+
+@media (max-width: 321px) {
+    #apresentacao-txt {
+        padding-top: 180px;
+        color: var(--cor-txt);
+        font-size: 15px;
+    }
+
+    #txt {
+        width: 300px;
+        padding-top: 40px;
+    }
+
+    #txt p{
+        width: 300px;
+    }
+
+    .content {
+        height: 300px;
+        width: 300px;
+    } 
+    
+    .slide-cont p {
+        width: 150px;
+        font-size: 13px;
+    }
+
+    .slide-txt h4 {
+        font-size: 17px;
+        color: var(--cor-blue-light);
+        width: 150px;
+    }
+
+    #content-rob {
+        width:320px ;
+        height: 580px;
+        background-color: var(--cor-principal);
+        overflow: hidden;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .image-rob img{
+        width: 320px;
+        border-radius: 20px;
+    }
+}
