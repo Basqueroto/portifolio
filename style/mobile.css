@@ -377,3 +377,9 @@
         border-radius: 20px;
     }
 }
+
+@media (max-height: 577px) {
+    #apresentacao-txt {
+        padding-top: 30vh;
+      }
+}
