@@ -401,3 +401,9 @@
         padding-top: 190px;
     }
 }
+
+@media (max-height:370px) {
+    #apresentacao-txt {
+        padding-top: 210px;
+    }
+}
