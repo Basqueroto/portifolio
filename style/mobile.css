@@ -252,7 +252,7 @@
     }
 
     #apresentacao-txt {
-        padding-top: 180px;
+        padding-top: 300px;
         color: var(--cor-txt);
         font-size: 15px;
     }
@@ -382,4 +382,22 @@
     #apresentacao-txt {
         padding-top: 30vh;
       }
+}
+
+@media (min-height:577px) {
+    #apresentacao-txt {
+        padding-top: 25vh;
+      }
+}
+
+@media (min-height:710px) {
+    #apresentacao-txt {
+        padding-top: 18vh;
+      }
+}
+
+@media (min-height:795px) {
+    #apresentacao-txt {
+        padding-top: 110px;
+    }
 }
